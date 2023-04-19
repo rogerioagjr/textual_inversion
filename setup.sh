@@ -23,7 +23,7 @@ echo "DATA DOWNLOADED!"
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
 export DATA_DIR="./cat"
 
-accelerate launch --config_file ./myconfig.yaml textual_inversion.py \
+accelerate launch --config_file ./myconfig.yml textual_inversion.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
   --train_data_dir=$DATA_DIR \
   --learnable_property="object" \
