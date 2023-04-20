@@ -35,7 +35,8 @@ accelerate launch --config_file ./myconfig.yml textual_inversion.py \
   --learning_rate=5.0e-04 --scale_lr \
   --lr_scheduler="constant" \
   --lr_warmup_steps=0 \
-  --output_dir="textual_inversion_cat"
+  --output_dir="textual_inversion_cat" \ 
+  --mixed_precision="fp16"
 
 echo "TRAINING COMPLETED!"
 
