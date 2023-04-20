@@ -7,4 +7,5 @@ Run the following commands from the root directory:
 bash create_env.sh
 conda activate myenv
 bash setup.sh
+bash run.sh
 ```
